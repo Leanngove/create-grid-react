@@ -72,17 +72,15 @@ function App() {
     <span className="grid-controls">
       <input
         type="number"
-        min="1"
         value={inputRows}
-        onChange={(e) => setInputRows(parseInt(e.target.value) || 1)}
+        onChange={(e) => setInputRows(parseInt(e.target.value))}
         placeholder="Rows"
       />
       <span>x</span>
       <input
         type="number"
-        min="1"
         value={inputCols}
-        onChange={(e) => setInputCols(parseInt(e.target.value) || 1)}
+        onChange={(e) => setInputCols(parseInt(e.target.value))}
         placeholder="Cols"
       />
       <button onClick={handleSetGrid}>Set Grid</button>
